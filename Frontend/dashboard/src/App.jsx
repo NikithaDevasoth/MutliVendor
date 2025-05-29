@@ -14,6 +14,7 @@ const App = () => {
           <Route path='/' element = {<LandingPage />}/>
           <Route path='/*' element = {<NotFound />} />
       </Routes>
+   
     </div>
   )
 }

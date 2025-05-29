@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { API_URL } from '../../data/apiPath';
-import { ThreeCircles } from 'react-loader-spinner';
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Register = ({ showLoginHandler }) => {
   const [username, setUsername] = useState("");
@@ -50,7 +50,7 @@ const Register = ({ showLoginHandler }) => {
     <div className="registerSection">
      {loading && 
       <div className="loaderSection">
-      <ThreeCircles
+      <ClipLoader
         visible={loading}
         height={100}
         width={100}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { API_URL } from '../../data/apiPath';
-import { ThreeCircles } from 'react-loader-spinner';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 const Login = ({showWelcomeHandler}) => {
@@ -55,7 +55,7 @@ const Login = ({showWelcomeHandler}) => {
   return (
     <div className="loginSection">
 {loading &&        <div className="loaderSection">
-        <ThreeCircles
+        <ClipLoader
           visible={loading}
           height={100}
           width={100}
