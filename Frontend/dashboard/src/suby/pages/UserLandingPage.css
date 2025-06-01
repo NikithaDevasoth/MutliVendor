@@ -1,0 +1,9 @@
+.user-landing {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fbe7;
+  padding: 20px;
+}
+
+.user-landing > div {
+  margin-top: 20px;
+}
