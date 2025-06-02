@@ -7,7 +7,7 @@ const Welcome = () => {
     <div className='welcomeSection'>
         <h2>Welcome {firmName}</h2>
         <div className="landingImage">
-          <img src='' alt='welcome' />
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVVNVQ1UMiNg0JU5TQyxBP68VXSR05hjrVA&s' alt='welcome' />
         </div>
     </div>
   )
