@@ -93,7 +93,7 @@ const Home = () => {
 
       <img
         style={styles.chefImage}
-        src="https://cdn-icons-png.flaticon.com/512/3046/3046127.png"
+        src="https://png.pngtree.com/png-clipart/20240512/original/pngtree-a-beautiful-woman-chef-png-image_15076760.png"
         alt="Chef"
       />
       <h1 style={styles.heading}>Welcome to MultiVendor App</h1>
