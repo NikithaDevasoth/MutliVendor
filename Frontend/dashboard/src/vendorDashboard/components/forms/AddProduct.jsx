@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { API_URL } from '../../data/apiPath';
-import ClipLoader from "react-spinners/ClipLoader";
+import ClipLoader from 'react-spinners/ClipLoader';
 
 
 const AddProduct = () => {

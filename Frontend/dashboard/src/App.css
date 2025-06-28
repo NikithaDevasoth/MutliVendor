@@ -8,6 +8,9 @@ body {
     /* font-family: "Roboto Condensed", sans-serif; */
     font-family: "Comme", sans-serif;
 }
+.some-class {
+    z-index: 10000;
+}
 
 .navSection {
     height: 80px;
@@ -111,17 +114,15 @@ body {
 
 .tableForm {
     width: 100%;
-    max-width: 50%;
-    margin-top: -100px;
+    max-width: 400px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     border: 1px solid gray;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    background-color: #fff;
 }
 
 .tableForm input {
@@ -183,37 +184,110 @@ body {
 
 /* products table */
 
+/* Product Form Container */
 .productSection {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-top: 100px;
+  width: 100%;
 }
 
+/* Product Form Heading */
+.productSection h3 {
+  text-align: center;
+  background-color: #403e3e;
+  color: white;
+  padding: 10px 0;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Product Table Listing */
 .product-table {
-    width: 80vw;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
 }
 
 .product-table th,
 .product-table td {
-    border: 1px solid rgb(128, 128, 128);
-    padding: 8px;
+  border: 1px solid rgb(180, 180, 180);
+  padding: 10px;
+  text-align: left;
 }
 
 .product-table th {
-    text-align: left;
-    background-color: rgb(47, 77, 212);
-    color: white;
+  background-color: #2e294e;
+  color: white;
 }
 
-.deleteBtn {
-    color: red;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+/* Product Card / Box Styling */
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #fff;
 }
+
+.productGroup img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Add Button inside Product Card */
+.addButton {
+  background-color: white;
+  color: green;
+  border: 1px solid lightgray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addButton:hover {
+  background-color: #e8f5e9;
+}
+
+/* Delete Button Styling */
+.deleteBtn {
+  color: red;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive Fixes */
+@media (max-width: 576px) {
+  .productSection {
+    padding: 0 10px;
+  }
+
+  .product-table {
+    font-size: 0.9rem;
+  }
+
+  .productBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productGroup img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
 
 
 /* not found */
@@ -283,13 +357,6 @@ h3 {
 
 .loaderSection {
     z-index: 10000;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .topBarSection {
